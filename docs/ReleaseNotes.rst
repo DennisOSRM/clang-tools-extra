@@ -130,6 +130,12 @@ Improvements to clang-tidy
   <clang-tidy/checks/modernize-use-override>` now supports `OverrideSpelling`
   and `FinalSpelling` options.
 
+- New :doc:`bugprone-placement-new-target-type-mismatch
+  <clang-tidy/checks/bugprone-placement-new-target-type-mismatch>` check.
+
+  Finds placement-new calls where the pointer type of the adress mismatches the
+  type of the created value.
+
 - New :doc:`openmp-exception-escape
   <clang-tidy/checks/openmp-exception-escape>` check.
 
